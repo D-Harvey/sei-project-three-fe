@@ -57,7 +57,7 @@ function AddComment ({ project, setProject }) {
         </div>
       </div>
       <div>
-        {project ? (project.comments.map(data => (
+        {project ? (project.comments?.map(data => (
           <div key={data._id} className='index-info'>
             <div className='user-and-time-comments'>
               <p className='user-comments'>{data.addedBy.username}</p>

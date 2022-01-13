@@ -21,6 +21,7 @@ function ProjectShow() {
     const getData = async () => {
       try {
         const res = await getSingleProject(projectId)
+        console.log('RES', res.data)
         setProject(res.data)
       } catch (err) {
         setIsError(true)
@@ -57,7 +58,7 @@ function ProjectShow() {
     // console.log(project.favourite)
   }
 
-  console.log(isFavourite)
+  console.log(project)
 
   return (
     <section>
